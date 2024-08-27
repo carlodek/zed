@@ -79,6 +79,7 @@ fn authorize_access_for_country(
     let is_country_supported_by_provider = match provider {
         LanguageModelProvider::Anthropic => anthropic::is_supported_country(country_code),
         LanguageModelProvider::OpenAi => open_ai::is_supported_country(country_code),
+        LanguageModelProvider::AzureOpenAi => true,
         LanguageModelProvider::Google => google_ai::is_supported_country(country_code),
         LanguageModelProvider::Zed => true,
     };

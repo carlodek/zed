@@ -129,6 +129,11 @@ spec:
                 secretKeyRef:
                   name: openai
                   key: api_key
+            - name: AZURE_OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: azure_open_ai
+                  key: api_key
             - name: ANTHROPIC_API_KEY
               valueFrom:
                 secretKeyRef:

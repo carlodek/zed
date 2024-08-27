@@ -901,6 +901,13 @@
     "openai": {
       "version": "1",
       "api_url": "https://api.openai.com/v1"
+    },
+    "azure_openai": {
+      "version": "1",
+      "service": "",
+      "deployment": "",
+      "api_v": "",
+      "api_url": "https://{service}.openai.azure.com/openai/deployments/{deployment}/chat/completions?api-version={api_v}"
     }
   },
   // Zed's Prettier integration settings.

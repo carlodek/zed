@@ -6,6 +6,7 @@ use gpui::{AppContext, Pixels};
 use language_model::{settings::AllLanguageModelSettings, CloudModel, LanguageModel};
 use ollama::Model as OllamaModel;
 use open_ai::Model as OpenAiModel;
+use azure_open_ai::Model as AzureOpenAiModel;
 use schemars::{schema::Schema, JsonSchema};
 use serde::{Deserialize, Serialize};
 use settings::{update_settings_file, Settings, SettingsSources};
